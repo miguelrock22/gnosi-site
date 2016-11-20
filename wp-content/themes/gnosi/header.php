@@ -1,3 +1,4 @@
+<?php $theme_dir = get_template_directory_uri();?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
@@ -7,16 +8,21 @@
         <title><?php echo wp_title(); ?> - Gnosi</title>
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-        <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css" />
-        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/tether.min.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+        <link href="<?php echo $theme_dir; ?>/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="<?php echo $theme_dir; ?>/js/jquery.js"></script>
+        <script type="text/javascript" src="<?php echo $theme_dir; ?>/js/tether.min.js"></script>
+        <script type="text/javascript" src="<?php echo $theme_dir; ?>/js/bootstrap.min.js"></script>
     </head>
     <body>
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 offset-md-8">
+                    <div class="col-md-4">
+                        <a href="<?php site_url(); ?>">
+                            <img class="logo" alt="logo" src="<?php echo $theme_dir; ?>/images/gnosi-logo.png"/>
+                        </a>    
+                    </div>
+                    <div class="col-md-4 offset-md-4 menu">
                         <ul class="nav nav-inline">
                           <li class="nav-item">
                             <a class="nav-link" href="#">Eventos</a>

@@ -6316,3 +6316,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   /* line 51, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-4.0.0.alpha5/assets/stylesheets/bootstrap/utilities/_visibility.scss */
   .hidden-print {
     display: none !important; } }
+
+/* line 1, sass/_partials/_header.scss */
+.logo {
+  width: 250px; }
+
+/* line 5, sass/_partials/_header.scss */
+.menu {
+  margin-top: 1.5rem; }
