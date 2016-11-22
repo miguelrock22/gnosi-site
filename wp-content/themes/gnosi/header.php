@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="<?php site_url(); ?>">
+                        <a href="<?php echo site_url(); ?>">
                             <img class="logo" alt="logo" src="<?php echo $theme_dir; ?>/images/gnosi-logo.png"/>
                         </a>    
                     </div>
